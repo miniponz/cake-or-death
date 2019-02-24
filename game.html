@@ -9,19 +9,29 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Luckiest+Guy|Patrick+Hand+SC" rel="stylesheet">
 </head>
 <body>
+    <audio id="click-sound" src="./assets/bubble.wav" volume="60" type="audio/wav"></audio>
+    <audio id="win-sound" src="./assets/chime-sound.wav" volume="60" type="audio/wav"></audio>
         <header>
             <h1>Cake or DEATH</h1>
         </header>
     <main>
         <section id="user-info">
-            <p id="cake-player">
+            <section id="cake-player">
                 <img id="cake-icon" src="./assets/cake-icon-2.png">
                 <span id="cake-name"></span>
-            </p>
-            <p id="death-player">
-                <img id="death-icon" src="./assets/death-icon.png">
+                <section class="win-count" id="win-count-cake">
+                    <p class="win-count-display">Wins:</p>
+                    <p class="win-count-display" id="cake-wins"></p>
+                </section>
+            </section>
+            <section id="death-player">
+                <img id="death-icon" src="./assets/dead.png">
                 <span id="death-name"></span>
-            </p>
+                <section class="win-count" id="win-count-death">
+                        <p class="win-count-display">Wins:</p>
+                        <p class="win-count-display" id="death-wins"></p>
+                </section>
+            </section>
         </section>
         <section id="turn-count">
             <p id="turn-display"></p>
